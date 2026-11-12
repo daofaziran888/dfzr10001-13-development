@@ -33,3 +33,33 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #067647; }
+.warn-text { color: #b54708; font-weight: 600; }
+.muted-text { color: var(--muted); font-size: 12px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+
+/* 看板下钻链路：批次面板、历史快照、工作台与独立下钻视图 */
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin: 12px 0; }
+.panel-title { font-size: 14px; margin: 0 0 10px; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; gap: 12px; flex-wrap: wrap; }
+.panel-head .panel-title { margin: 0; }
+.inner-table { margin-top: 4px; }
+.dim-tag { display: inline-block; background: #eef4ff; color: var(--brand); border: 1px solid #c7d9ff; border-radius: 999px; padding: 1px 10px; font-size: 12px; }
+.check-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.check-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; white-space: nowrap; }
+.conclusion-cell { max-width: 320px; color: var(--muted); font-size: 12px; }
+
+.drill-hero { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: linear-gradient(135deg, #eef4ff 0%, #ffffff 70%); }
+.hero-main { display: flex; flex-direction: column; gap: 6px; }
+.hero-label { color: var(--muted); font-size: 12px; }
+.hero-dimension { font-size: 28px; color: var(--brand); }
+.hero-window { font-size: 13px; font-weight: 600; }
+.hero-meta { display: flex; gap: 20px; align-items: flex-end; }
+.hero-meta div { display: flex; flex-direction: column; gap: 4px; }
+.hero-meta strong { font-size: 14px; }
+
+.meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px 18px; margin: 0; }
+.meta-cell { margin: 0; }
+.meta-cell dt { color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+.meta-cell dd { margin: 0; font-size: 13px; }
+.meta-wide { grid-column: 1 / -1; }

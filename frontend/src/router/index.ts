@@ -15,6 +15,7 @@ const Dedup = () => import('@/views/dedup/index.vue')
 const Release = () => import('@/views/release/index.vue')
 const Alert = () => import('@/views/alert/index.vue')
 const Dashboard = () => import('@/views/dashboard/index.vue')
+const DashboardDrilldown = () => import('@/views/dashboard/Drilldown.vue')
 const Storage = () => import('@/views/storage/index.vue')
 const Audit = () => import('@/views/audit/index.vue')
 
@@ -36,6 +37,7 @@ const router = createRouter({
     { path: '/release', name: 'release', component: Release },
     { path: '/alert', name: 'alert', component: Alert },
     { path: '/dashboard', name: 'dashboard', component: Dashboard },
+    { path: '/dashboard/:id/drilldown', name: 'dashboard-drill', component: DashboardDrilldown },
     { path: '/storage', name: 'storage', component: Storage },
     { path: '/audit', name: 'audit', component: Audit },
   ],
